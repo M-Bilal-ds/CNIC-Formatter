@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CNIC Formatter</title>
+    <script src="cnic.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 40px;
+            background-color: #f9f9f9;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        label, input, button {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        input {
+            padding: 8px;
+            width: 220px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 8px 16px;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #output {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>CNIC Formatter</h1>
+
+    <label for="cnic">Enter CNIC:</label><br>
+    <input type="text" id="cnic" placeholder="XXXXX-XXXXXXX-X" title="Enter CNIC in correct format">
+    <button onclick="Validate()">Enter</button>
+
+    <p id="output"></p>
+</body>
+</html>
